@@ -8,6 +8,7 @@ main_fun <- function(){
     }
 }
 
+
 hide_n_seek <- function(){
     game_over <- FALSE
     while(game_over == FALSE){
@@ -16,10 +17,13 @@ hide_n_seek <- function(){
     
     #prompt user to enter their name
     p1[1,2] <- user_said()
+
     #set user to seeking to start the game on their turn
     p1[4,2] <-"Seeking"
+
     #user will pick a hiding place
     set_hiding_place(p1)
+
     #cpu setup
     cpu <-create_player()
 
@@ -43,7 +47,8 @@ user_said <- function() {
 }
 
 create_player <- function() {
-    player <- matrix (c("Name: ","Location X: ","Location Y: ","Status: ","Guesses X: ","Guesses Y: ","CPU",
+    player <- matrix (c("Name: ","Location X: ","Location Y: ","Status: ","Guesses X: ","Guesses Y: ",
+    "CPU",
        0,
        0,
         "Hiding",
@@ -87,7 +92,7 @@ move_finder <- function (person1, person2) {
 
 
     }else{
-        print("444444444444444444444444")
+        #print("444444444444444444444444")
         plot_guesses(person1)
         print("the player is finding\nWhere do you want to check?\nEnter a number for the 'X' axis.") # nolint: line_length_linter.
         x_check <- as.numeric(user_said())
@@ -161,6 +166,7 @@ check_positions <- function( person1, person2, guessX, guessY){
             person2[4,2] <- "FOUND!!!"
             print("Congrats you found the CPU and won the game!!!")
             
+            #Testing to see if the matrix at player[2,2] and guess are the same type
             print("here is the cpu x")
             print(person2[2,2])
             

@@ -5,9 +5,9 @@ This is project was an introduction to the coding language R.  This program is m
 
 The main purpose of this project was to learn and explore the world of R and see how well it fits in my skill set of other coding languages.  As this is my first time with "R", it presented itself as challenge but, overall was a good learning experience.  The main majority of the program is a hide and go seek game that is still in progress.  Essentially the idea of the program is that a user and a CPU would pick a point on a grid and they would take turns trying to pick a point where their opponent is at.  The full vision would expand the field from an X and Y plane to a Zn plane (Zn would be like multiple levels like underwater or airborne).
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
+# Video Demo
 
-[R Demo](http://youtube.link.goes.here)
+[R Demo](https://www.youtube.com/watch?v=hKCcj8cUBWo)
 
 # Development Environment
 
@@ -18,8 +18,6 @@ The main purpose of this project was to learn and explore the world of R and see
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
 - [R Tutorial](https://www.w3schools.com/r/default.asp)
 - [R Documentation](https://www.r-project.org/about.html)
 - [R in Visual Studio Code](https://code.visualstudio.com/docs/languages/r#)
@@ -27,8 +25,6 @@ The main purpose of this project was to learn and explore the world of R and see
 
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
 
 - Something to fix, I would fix how the guesses are kept track.  My original vision had all guess plotted on a graph so the player can visually see where they have guessed and where to plan to strike next.
 - Something to improve, I would improve the try reworking a way to use a data frame as a scoreboard.
